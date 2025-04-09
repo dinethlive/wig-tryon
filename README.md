@@ -20,14 +20,14 @@ This project is the foundation for a more advanced AI-powered Shopify app for cu
 
 ## 🛠️ Tech Stack
 
-| Component        | Tech                                |
-|------------------|--------------------------------------|
-| Frontend         | HTML, CSS, JavaScript                |
-| Face Tracking    | [MediaPipe FaceMesh](#) (WebGL) |
-| Image Overlay    | `<canvas>` rendering                 |
-| Image Upload     | Native FileReader API                |
-| Exporting Image  | `canvas.toDataURL()` + download link |
-| Wig Assets       | Transparent PNG wigs (`assets/wigs/`) |
+| Component        | Tech                                                                                     |
+|------------------|------------------------------------------------------------------------------------------|
+| Frontend         | HTML, CSS, JavaScript                                                                    |
+| Face Tracking    | [MediaPipe FaceMesh](https://developers.google.com/mediapipe/solutions/vision/face_mesh) |
+| Image Overlay    | `<canvas>` rendering                                                                     |
+| Image Upload     | Native FileReader API                                                                    |
+| Exporting Image  | `canvas.toDataURL()` + download link                                                     |
+| Wig Assets       | Transparent PNG wigs (`assets/wigs/`)                                                    |
 
 ---
 
@@ -77,7 +77,7 @@ wig-tryon/
 - Implement **proportional scaling** based on image aspect ratio (now done ✅)
 - Add **user controls**: move, resize, rotate wig
 - Add **face pose detection** to adjust wig rotation slightly
-- Integrate **Stable Diffusion / ControlNet** for realistic, AI-generated previews
+- Integrate **AI models** for realistic, AI-generated previews
 - Add **Shopify integration** to link selected wigs to store products
 
 ---
@@ -104,7 +104,7 @@ wig-tryon/
 
 ## 🙌 Credits
 
-- Built with [MediaPipe](https://google.github.io/mediapipe/)
+- Built with [MediaPipe](https://developers.google.com/mediapipe/)
 - Wig overlays generated using DALL·E & custom editing
 - Created by [DLabs | Dineth Pramodya](https://dineth.lk)
 
@@ -112,4 +112,4 @@ wig-tryon/
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
