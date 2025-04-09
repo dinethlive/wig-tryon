@@ -23,7 +23,7 @@ This project is the foundation for a more advanced AI-powered Shopify app for cu
 | Component        | Tech                                |
 |------------------|--------------------------------------|
 | Frontend         | HTML, CSS, JavaScript                |
-| Face Tracking    | [MediaPipe FaceMesh](https://google.github.io/mediapipe/solutions/face_mesh) (WebGL) |
+| Face Tracking    | [MediaPipe FaceMesh](#) (WebGL) |
 | Image Overlay    | `<canvas>` rendering                 |
 | Image Upload     | Native FileReader API                |
 | Exporting Image  | `canvas.toDataURL()` + download link |
