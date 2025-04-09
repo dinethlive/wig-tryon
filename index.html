@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wig Try-On</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- MediaPipe FaceMesh via CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1657299874/face_mesh.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1675466124/drawing_utils.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wig Try-On</h1>
+
+      <!-- Mode Toggle -->
+      <div class="mode-toggle">
+        <button id="webcamModeBtn" class="active">Live Camera</button>
+        <button id="uploadModeBtn">Upload Photo</button>
+      </div>
+
+      <!-- Video/Canvas -->
+      <div id="tryon-area">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="overlayCanvas"></canvas>
+        <input type="file" id="uploadInput" accept="image/*" hidden />
+        <img id="uploadedImage" style="display: none" />
+      </div>
+
+      <!-- Wig Selector -->
+      <div class="wig-selector">
+        <button class="wig-btn" data-wig="wig1.png">Wig 1</button>
+        <button class="wig-btn" data-wig="wig2.png">Wig 2</button>
+        <button class="wig-btn" data-wig="wig3.png">Wig 3</button>
+      </div>
+
+      <!-- Actions -->
+      <div class="action-buttons">
+        <button id="screenshotBtn">Download Image</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

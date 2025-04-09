@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.mode-toggle {
+  margin-bottom: 15px;
+}
+
+.mode-toggle button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.mode-toggle button.active,
+.mode-toggle button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#tryon-area {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Maintain square layout */
+  background-color: #ccc;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+video,
+canvas,
+#uploadedImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.wig-selector {
+  margin-bottom: 20px;
+}
+
+.wig-btn {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.wig-btn:hover {
+  background-color: #007bff;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 480px) {
+  .wig-btn,
+  .mode-toggle button,
+  .action-buttons button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
